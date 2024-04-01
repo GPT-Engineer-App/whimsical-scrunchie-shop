@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Heading, Text, Image, Button, Grid, GridItem, Stack, Flex, Icon } from "@chakra-ui/react";
-import Logo from "../logo.svg";
 import { FaShoppingCart, FaStar } from "react-icons/fa";
 
 const products = [
@@ -38,7 +37,9 @@ const Index = () => {
   return (
     <Box>
       <Flex as="header" align="center" justify="space-between" wrap="wrap" padding={6} bg="gray.800" color="white">
-        <Box as={Logo} h="50px" />
+        <Heading as="h1" size="lg" letterSpacing={"tighter"}>
+          Frenchie and CO.
+        </Heading>
         <Button leftIcon={<FaShoppingCart />} colorScheme="pink" size="lg">
           Cart
         </Button>
