@@ -1,7 +1,0 @@
-import { Image } from "@chakra-ui/react";
-
-const Logo = ({ src, ...rest }) => {
-  return <Image src={src} alt="Frenchie and CO. Logo" {...rest} />;
-};
-
-export default Logo;
