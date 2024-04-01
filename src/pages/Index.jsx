@@ -1,5 +1,7 @@
 import React from "react";
-import { Box, Heading, Text, Image, Button, Grid, GridItem, Stack, Flex, Icon } from "@chakra-ui/react";
+import { Box, Text, Image, Button, Grid, GridItem, Stack, Flex, Icon } from "@chakra-ui/react";
+import Logo from "../components/Logo";
+import logoGif from "../assets/logo.gif";
 import { FaShoppingCart, FaStar } from "react-icons/fa";
 
 const products = [
@@ -37,9 +39,7 @@ const Index = () => {
   return (
     <Box>
       <Flex as="header" align="center" justify="space-between" wrap="wrap" padding={6} bg="gray.800" color="white">
-        <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-          Frenchie and CO.
-        </Heading>
+        <Logo src="/assets/logo.gif" boxSize="50px" />
         <Button leftIcon={<FaShoppingCart />} colorScheme="pink" size="lg">
           Cart
         </Button>
@@ -47,9 +47,9 @@ const Index = () => {
 
       <Box backgroundImage="https://images.unsplash.com/photo-1604937455095-ef2fe3d46fcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwYXN0ZWwlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTcxMTk4ODEyOHww&ixlib=rb-4.0.3&q=80&w=1080" backgroundPosition="center" backgroundRepeat="no-repeat" backgroundSize="cover" paddingY={20}>
         <Stack spacing={6} align="center">
-          <Heading as="h2" size="2xl" mt={6} mb={6}>
+          <Text as="h2" size="2xl" mt={6} mb={6}>
             Elevate Your Hair Game
-          </Heading>
+          </Text>
           <Text fontSize="xl">Discover our collection of luxurious scrunchies, crafted from the finest materials for a touch of elegance in your everyday style.</Text>
           <Button colorScheme="pink" size="lg">
             Shop Now
