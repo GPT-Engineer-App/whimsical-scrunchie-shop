@@ -38,7 +38,7 @@ const Index = () => {
     <Box>
       <Flex as="header" align="center" justify="space-between" wrap="wrap" padding={6} bg="gray.800" color="white">
         <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-          Frenchie and CO.
+          Luxe Scrunchies
         </Heading>
         <Button leftIcon={<FaShoppingCart />} colorScheme="pink" size="lg">
           Cart
@@ -90,7 +90,7 @@ const Index = () => {
       </Grid>
 
       <Box as="footer" bg="gray.800" color="white" py={10} textAlign="center">
-        <Text>&copy; 2023 Frenchie and CO. All rights reserved.</Text>
+        <Text>&copy; 2023 Luxe Scrunchies. All rights reserved.</Text>
       </Box>
     </Box>
   );
